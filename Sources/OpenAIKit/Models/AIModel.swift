@@ -52,6 +52,7 @@ public enum AIModelType: RawRepresentable, Codable {
 public extension AIModelType {
 	/// GPT-4 is a large multimodal model that can solve difficult problems with greater accuracy than any of our previous models, thanks to its broader general knowledge and advanced reasoning capabilities. Like `gpt-3.5-turbo`, GPT-4 is optimized for chat but works well for traditional completions tasks.
 	enum GPTv4Model: String {
+        case gpt4o = "gpt-4o"
 		/// More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with our latest model iteration.
 		case gpt4 = "gpt-4"
 		/// Same capabilities as the base `gpt-4` mode but with 4x the context length. Will be updated with our latest model iteration.
